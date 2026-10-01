@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LA MAISON — Halloween Private Party</title>
+  <meta name="description" content="Selected Guests Only. Richiedi il tuo invito per LA MAISON Halloween Private Party — 31/10/2026, ore 22:00." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Vercel Web Analytics -->
+  <script>
+    window.va = window.va || function () {
+      (window.vaq = window.vaq || []).push(arguments);
+    };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
+
+</head>
+<body>
+
+  <div id="enterScreen" class="enter-screen">
+    <div class="enter-inner">
+      <div class="enter-kicker">LA MAISON EVENTS PRESENTS</div>
+      <div class="enter-title">HALLOWEEN<br><span>PRIVATE PARTY</span></div>
+      <div class="enter-date">31.10.2026 • UNKNOWN LOCATION</div>
+      <button id="enterBtn" class="enter-btn" type="button">ENTER LA MAISON</button>
+      <div class="enter-note">Tap to enter • sound experience</div>
+    </div>
+  </div>
+
+  <canvas id="particles"></canvas>
+  <div class="vignette"></div>
+  <header class="topbar">
+    <div class="brand">LA MAISON</div>
+    <div class="top-right">
+      <span class="mini">SELECTED GUESTS ONLY</span>
+      <a class="top-cta" href="#guestlist">RICHIEDI INVITO</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-backdrop"></div>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">31.10.2026 • 22:00 • 18+ / MINORI SOLO ACCOMPAGNATI</div>
+          <h1>Halloween,<br><span>ma solo per chi entra in lista.</span></h1>
+          <p class="lead">
+            Una notte privata. Una location sconosciuta. Un accesso selezionato.
+            <strong>LA MAISON</strong> apre le porte solo agli ospiti approvati.
+          </p>
+
+          <div class="countdown-wrap">
+            <div class="countdown-label">CHIUSURA ISCRIZIONI • 24/10/2026</div>
+            <div class="countdown" id="countdown">
+              <div><strong id="d">--</strong><span>giorni</span></div>
+              <div><strong id="h">--</strong><span>ore</span></div>
+              <div><strong id="m">--</strong><span>min</span></div>
+              <div><strong id="s">--</strong><span>sec</span></div>
+            </div>
+          </div>
+
+          <div class="event-chips">
+            <span>UNKNOWN LOCATION</span>
+            <span>DRESS CODE: HALLOWEEN PARTY</span>
+            <span>MAX 100 GUESTS</span>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#guestlist">RICHIEDI IL TUO INVITO</a>
+            <a class="btn btn-secondary" href="#rules">COME FUNZIONA</a>
+          </div>
+
+          <div class="warning-line">ACCESSO NOMINATIVO • GRUPPI DONNE SU RICHIESTA • SOLO OSPITI APPROVATI</div>
+        </div>
+
+        <div class="hero-poster-wrap">
+          <div class="poster-glow"></div>
+          <img src="poster.jpg" alt="Locandina LA MAISON Halloween Private Party" class="hero-poster" />
+          <div class="poster-badge">SELECTED<br>GUESTS<br>ONLY</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>PRIVATE PARTY</span><span>•</span><span>SELECTED GUESTS ONLY</span><span>•</span>
+        <span>UNKNOWN LOCATION</span><span>•</span><span>HALLOWEEN DRESS CODE</span><span>•</span>
+        <span>100 GUESTS MAX</span><span>•</span><span>PRIVATE PARTY</span><span>•</span>
+        <span>SELECTED GUESTS ONLY</span><span>•</span><span>UNKNOWN LOCATION</span><span>•</span>
+      </div>
+    </section>
+
+    <section id="rules" class="section">
+      <div class="section-head">
+        <span class="section-kicker">THE RULES</span>
+        <h2>Non basta registrarsi.<br>Bisogna essere approvati.</h2>
+      </div>
+      <div class="rules-grid">
+        <article><span>01</span><h3>Registrati entro il 24/10</h3><p>Le richieste chiudono il 24 ottobre 2026. Il riferimento a 100 ospiti è indicativo.</p></article>
+        <article><span>02</span><h3>Attendi la selezione</h3><p>La richiesta entra in revisione. L’iscrizione non garantisce l’accesso all’evento.</p></article>
+        <article><span>03</span><h3>Ricevi la conferma</h3><p>Se approvato, riceverai conferma via WhatsApp con le istruzioni successive.</p></article>
+        <article><span>04</span><h3>Presentati in lista</h3><p>Accesso consentito solo ai nominativi approvati. Per i gruppi donne devono essere indicati tutti i nomi e cognomi.</p></article>
+      </div>
+    </section>
+
+    <section class="section statement">
+      <div class="statement-card">
+        <span class="section-kicker">DRESS CODE</span>
+        <h2>Halloween Party.</h2>
+        <p>Interpreta la notte. Elegante, dark, creativo, cinematografico. Il costume non deve essere banale: deve farsi ricordare.</p>
+      </div>
+    </section>
+
+    <section id="guestlist" class="section form-section">
+      <div class="form-copy">
+        <span class="section-kicker">GUEST LIST REQUEST</span>
+        <h2>Richiedi accesso.</h2>
+        <p class="bigcopy"><strong>Selected Guests Only.</strong> Le iscrizioni terminano il <strong>24/10/2026</strong>.</p>
+        <div class="selected-box">
+          <div>SELECTED</div>
+          <div>GUESTS</div>
+          <div>ONLY</div>
+        </div>
+        <ul class="check-list">
+          <li>Evento 18+. I minorenni possono richiedere accesso solo se accompagnati da un amico maggiorenne approvato in lista</li>
+          <li>Accesso nominativo; richiesta gruppo disponibile solo per gruppi di donne</li>
+          <li>Per i gruppi devono essere indicati nome e cognome di ogni partecipante</li>
+          <li>Accesso solo se approvato in lista</li>
+          <li>Location comunicata agli ospiti selezionati</li>
+        </ul>
+      </div>
+
+      <form class="guest-form" id="inviteForm">
+        <div class="form-title">REQUEST ACCESS</div>
+        <div class="field-grid">
+          <div class="field">
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" type="text" autocomplete="given-name" required />
+          </div>
+          <div class="field">
+            <label for="cognome">Cognome</label>
+            <input id="cognome" name="cognome" type="text" autocomplete="family-name" required />
+          </div>
+        </div>
+
+        <div class="field-grid">
+          <div class="field">
+            <label for="telefono">WhatsApp / Telefono</label>
+            <input id="telefono" name="telefono" type="tel" autocomplete="tel" placeholder="+39 ..." required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="instagram">Instagram</label>
+          <input id="instagram" name="instagram" type="text" placeholder="@username" required />
+        </div>
+
+        <div class="field">
+          <label for="tipo_iscrizione">Tipo di iscrizione</label>
+          <select id="tipo_iscrizione" name="tipo_iscrizione" required>
+            <option value="">Seleziona</option>
+            <option value="Singola">Da solo/a</option>
+            <option value="Gruppo donne">Gruppo donne</option>
+          </select>
+        </div>
+
+        <div id="groupFields" class="conditional-box" hidden>
+          <div class="conditional-title">RICHIESTA GRUPPO DONNE</div>
+          <p class="conditional-help">Inserisci nome e cognome di tutte le altre partecipanti del gruppo, una persona per riga.</p>
+          <div class="field">
+            <label for="componenti_gruppo">Nomi e cognomi del gruppo</label>
+            <textarea id="componenti_gruppo" name="componenti_gruppo" rows="5" placeholder="Es.&#10;Giulia Rossi&#10;Martina Bianchi"></textarea>
+          </div>
+          <label class="checkbox">
+            <input type="checkbox" name="conferma_gruppo_donne" />
+            <span>Confermo che la richiesta di gruppo riguarda esclusivamente partecipanti donne.</span>
+          </label>
+        </div>
+
+        <div class="field">
+          <label for="maggiorenne">Età</label>
+          <select id="maggiorenne" name="maggiorenne" required>
+            <option value="">Seleziona</option>
+            <option value="Sì">Ho 18 anni o più</option>
+            <option value="No">Sono minorenne</option>
+          </select>
+        </div>
+
+        <div id="minorFields" class="conditional-box" hidden>
+          <div class="conditional-title">ACCESSO MINORENNI</div>
+          <p class="conditional-help">Il minorenne può richiedere l’accesso solo se accompagnato da un amico maggiorenne, che dovrà risultare approvato in lista.</p>
+          <div class="field">
+            <label for="accompagnatore_maggiorenne">Nome e cognome dell’amico maggiorenne accompagnatore</label>
+            <input id="accompagnatore_maggiorenne" name="accompagnatore_maggiorenne" type="text" placeholder="Nome Cognome" />
+          </div>
+          <label class="checkbox">
+            <input type="checkbox" name="conferma_minore" />
+            <span>Confermo che entrerò e resterò accompagnato/a dal maggiorenne indicato, salvo ulteriori regole richieste dalla location o dall’organizzazione.</span>
+          </label>
+        </div>
+
+        <label class="checkbox">
+          <input type="checkbox" name="privacy" required />
+          <span>Ho letto e accetto la <a href="privacy.html" target="_blank">Privacy Policy</a> per la gestione della guest list.</span>
+        </label>
+
+        <button class="btn btn-primary full" id="submitBtn" type="submit">INVIA RICHIESTA</button>
+        <div id="formMessage" class="form-message"></div>
+        <p class="form-note">La richiesta verrà valutata dallo staff. La registrazione non garantisce l’ingresso.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-brand">LA MAISON</div>
+    <div>Halloween Private Party • 31/10/2026 • 22:00 • 18+ / minori accompagnati • Unknown Location</div>
+    <div><a href="privacy.html">Privacy Policy</a> • Selected Guests Only</div>
+  </footer>
+
+  <button id="spotifyOpen" class="spotify-open is-hidden" type="button">♪ MUSIC</button>
+<div id="spotifyDock" class="spotify-dock is-hidden" aria-live="polite">
+    <div class="spotify-dock-head">
+      <div>
+        <div class="spotify-kicker">LA MAISON SOUND</div>
+        <strong>MUCHACHA</strong>
+        <span>Aissa · Rvfv · Kreamly</span>
+      </div>
+      <button id="spotifyClose" class="spotify-close" type="button" aria-label="Chiudi player">×</button>
+    </div>
+    <iframe
+      id="spotifyPlayer"
+      style="border-radius:12px"
+      src="https://open.spotify.com/embed/track/4rDCRcln8WCHWPRt0YTFLs?utm_source=generator&theme=0"
+      width="100%"
+      height="152"
+      frameborder="0"
+      allowfullscreen=""
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy"
+      title="MUCHACHA — Aissa, Rvfv, Kreamly">
+    </iframe>
+    <div class="spotify-tip">Premi ▶ sul player per far partire la musica.</div>
+  </div>
+  <script src="script.js"></script>
+
+  <a
+    class="instagram-follow"
+    href="https://www.instagram.com/lamaison_event?stkn=MXR3ang1M2Nycm90cQ=="
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Segui La Maison Events su Instagram">
+    <span class="instagram-icon">◎</span>
+    <span>
+      <strong>FOLLOW @LAMAISON_EVENT</strong>
+      <small>Instagram • La Maison Events</small>
+    </span>
+  </a>
+
+</body>
+</html>

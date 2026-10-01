@@ -1,0 +1,17 @@
+LA MAISON — pacchetto completo con Analytics
+
+Contenuto:
+- index.html
+- privacy.html
+- conferma.html
+- poster.jpg
+- script.js
+- style.css
+- vercel.json
+- cartella api/register.js
+- README vari
+
+IMPORTANTE:
+- NON inserire AIRTABLE_TOKEN su GitHub.
+- Le variabili AIRTABLE_TOKEN, AIRTABLE_BASE_ID e AIRTABLE_TABLE_ID devono restare in Vercel > Environment Variables.
+- Caricare su GitHub tutto il contenuto di questa cartella, mantenendo api/register.js dentro la cartella api.
